@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Family Phone – Adatvédelmi szabályzat</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+body{margin:0;background:#f7fbfa;color:#10211f}
+main{max-width:900px;margin:auto;padding:32px 20px 64px}
+article{background:#fff;border-radius:20px;padding:32px;box-shadow:0 8px 30px rgba(0,0,0,.06)}
+h1{font-size:2rem;line-height:1.2;color:#006f62}
+h2{margin-top:2rem;color:#075e55}
+h3{margin-top:1.5rem}
+a{color:#006f62}
+code{background:#eef6f4;padding:.1em .3em;border-radius:.3em}
+.lang{display:flex;justify-content:flex-end;margin-bottom:16px}
+.lang a{font-weight:700}
+footer{margin-top:28px;font-size:.9rem;color:#52615f}
+@media (prefers-color-scheme:dark){
+body{background:#101716;color:#e7efed}
+article{background:#18211f}
+h1,h2,a{color:#63d4c1}
+code{background:#263330}
+footer{color:#b1bfbc}
+}
+</style>
+</head>
+<body>
+<main>
+<div class="lang"><a href="privacy-policy.html">English</a></div>
+<article>
+<h1>Adatvédelmi szabályzat — Family Phone / Családi Telefon</h1>
+<p><strong>Hatálybalépés:</strong> 2026. október 1.</p>
+<p>A Family Phone („Családi Telefon”, „alkalmazás”) célja, hogy egyszerű, jól áttekinthető családi telefonálást és gondozói beállításokat biztosítson. Ez a szabályzat a jelenlegi Android-verzió adatkezelését ismerteti.</p>
+<h2>A készüléken tárolt adatok</h2>
+<p>A jelenlegi verzió nem igényel fejlesztői felhasználói fiókot, és nem működtet fejlesztői háttérszervert.</p>
+<p>Az alkalmazás privát tárhelyén helyben tárolhatók:</p>
+<ul>
+<li>legfeljebb hat családtag neve;</li>
+<li>kapcsolati megnevezések és hangos megszólítások;</li>
+<li>telefonszámok;</li>
+<li>a gondozó által kiválasztott névjegyfotó helyi hivatkozása;</li>
+<li>hangos visszajelzési beállítások;</li>
+<li>az ébresztőszó funkció beállítása;</li>
+<li>megerősített, hívás utáni üzenetszöveg és helyi kézbesítési állapot;</li>
+<li>a védett mód állapota;</li>
+<li>a gondozói PIN ellenőrzéséhez szükséges sózott kriptográfiai hash — maga a PIN nem kerül eltárolásra;</li>
+<li>a kezelt családtag mozgásképességi jelölése és az Egyszerű Lockscreen beállítása;</li>
+<li>Gyermek mód esetén az életkor, napi időbeosztás és a szülő által megadott funkciószabályok;</li>
+<li>opcionális helymegosztás esetén a legutóbbi helyzet pillanatképe.</li>
+</ul>
+<p>Az alkalmazás nem tárol teljes helyelőzményt.</p>
+<h2>Mikrofon és beszédfelismerés</h2>
+<p>A mikrofonengedélyt az alkalmazás kizárólag hangfunkciókhoz használja.</p>
+<p>A támogatott helyi ébresztőszó az Android eszközön futó beszédfelismerését használja. A felhasználó által indított Beszélj funkció és diktálás elsősorban helyi felismerést használ, de ha ez nem érhető el, a készülék beállított rendszer-beszédfelismerő szolgáltatása is használható. Ennek szolgáltatója egyes készülékeken hálózati feldolgozást alkalmazhat.</p>
+<p>A Family Phone nem menti a nyers mikrofonhangot és nem naplózza a köztes felismerési találatokat. A hívás utáni diktálásból csak a felhasználó által megerősített szöveg kerül helyben elmentésre.</p>
+<h2>Telefonhívások</h2>
+<p>Kimenő híváskor az alkalmazás a kiválasztott telefonszámot az Android telefonrendszerének adja át. A hívást a készülék és a mobilszolgáltató kezeli.</p>
+<p>A Family Phone opcionálisan az Android alapértelmezett Telefon alkalmazásaként is használható. Ebben az esetben az alkalmazás kezeli a bejövő és folyamatban lévő hívás felületét, bemondhatja az ismert hívó nevét, és megkérdezheti, hogy a felhasználó szeretné-e felvenni a hívást.</p>
+<p>Az alkalmazás nem olvassa a hívásnaplót, és nem kér SMS- vagy Call Log-jogosultságot.</p>
+<h2>Névjegyek</h2>
+<p>A gondozó opcionálisan engedélyezheti a Névjegyek hozzáférést.</p>
+<p>Ezt az alkalmazás kizárólag arra használja, hogy egy bejövő telefonszámhoz helyben megkeresse a névjegyzékben tárolt megjelenítési nevet, ha a hívó nem szerepel a Family Phone előre beállított családi listáján.</p>
+<p>A teljes névjegyzéket az alkalmazás nem másolja saját adatbázisba, és nem küldi fejlesztői szerverre.</p>
+<p>Ha a jogosultság nincs megadva, a bejövő hívás továbbra is működik; a listán kívüli hívó ismeretlen hívóként jelenik meg.</p>
+<h2>Védett telefon mód</h2>
+<p>Megfelelően provisionált, kezelt Android-készüléken a Family Phone Device Owner / Lock Task védett módban is működhet. Ennek célja, hogy a leegyszerűsített kezelőfelületet ne lehessen véletlenül elhagyni.</p>
+<p>A gondozói beállításokat 4–8 számjegyű helyi PIN védheti. Maga a PIN nem kerül eltárolásra.</p>
+<p>A távoli gondozói parancsok hitelesítésének kriptográfiai rétege elő van készítve, de a jelenlegi verzió nem működtet olyan fejlesztői backend/push szolgáltatást, amely két készülék között távoli zárolást, feloldást vagy helylekérést továbbítana.</p>
+<h2>Egyszerű Lockscreen és mozgásképességi jelölés</h2>
+<p>A gondozó megadhatja, hogy a kezelt családtag fizikailag képes-e a telefon használatára.</p>
+<p>Az Egyszerű Lockscreen csak akkor kapcsolható be, ha a családtag mozgásképesként van megjelölve. Ha ez a jelölés megszűnik, az Egyszerű Lockscreen automatikusan kikapcsol.</p>
+<p>Ez a beállítás helyben marad, és a jelenlegi verzió nem továbbítja fejlesztői szerverre.</p>
+<h2>Gyermek mód</h2>
+<p>A szülő vagy gondozó Gyermek módot állíthat be. Az alkalmazás helyben tárolhatja:</p>
+<ul>
+<li>a gyermek életkorát években;</li>
+<li>az ébredés, iskola és lefekvés időpontjait;</li>
+<li>a funkciókhoz beállított minimum életkort;</li>
+<li>az iskolaidőre, szabadidőre és éjszakára vonatkozó engedélyeket.</li>
+</ul>
+<p>Ezeket az adatokat a jelenlegi verzió nem küldi fejlesztői szerverre és nem használja reklámprofil kialakítására.</p>
+<h2>Biztonsági helyadat</h2>
+<p>A gondozó opcionálisan bekapcsolhatja a helyhozzáférést.</p>
+<p>Bekapcsolt állapotban a Family Phone helyadatot használhat akkor is, amikor az alkalmazás kicsinyítve van; erről folyamatos Android foreground-service értesítés tájékoztat.</p>
+<p>A jelenlegi verzió csak a legutóbbi helyzetet, annak időpontját és pontosságát, valamint — ha elérhető — az akkumulátorszintet tárolja helyben. Nem tárol teljes útvonalat vagy helyelőzményt.</p>
+<p>A jelenlegi verzió a helyadatot nem küldi Family Phone fejlesztői szerverre.</p>
+<h2>Google Play-vásárlás</h2>
+<p>A Family Phone Full opcionális, egyszeri digitális vásárlásként érhető el a Google Play Billing rendszerén keresztül.</p>
+<p>A fizetés és a fizetési adatok kezelése a Google Play feladata. A Family Phone csak a jogosultság megállapításához szükséges vásárlási állapotot kérdezi le. A fejlesztő nem kapja meg és nem tárolja a bankkártya adatait.</p>
+<h2>Hirdetések és követés</h2>
+<p>A jelenlegi verzió:</p>
+<ul>
+<li>nem tartalmaz reklámot;</li>
+<li>nem tartalmaz analitikai SDK-t;</li>
+<li>nem használ keresztalkalmazásos követést;</li>
+<li>nem működtet fejlesztői telemetria-szolgáltatást.</li>
+</ul>
+<h2>Jogosultságok</h2>
+<p>A Family Phone a funkcióktól függően a következő Android-jogosultságokat kérheti:</p>
+<ul>
+<li><strong>Mikrofon:</strong> hangvezérléshez és diktáláshoz;</li>
+<li><strong>Telefonhívás:</strong> hívás indításához;</li>
+<li><strong>Névjegyek:</strong> bejövő hívó nevének helyi feloldásához;</li>
+<li><strong>Értesítések:</strong> bejövő hívások és aktív foreground service jelzéséhez;</li>
+<li><strong>Teljes képernyős hívásjelzés:</strong> bejövő telefonhívás megjelenítéséhez;</li>
+<li><strong>Helyadat:</strong> opcionális biztonsági helyzet frissítéséhez;</li>
+<li><strong>Foreground location service:</strong> a bekapcsolt biztonsági helyadat frissen tartásához.</li>
+</ul>
+<p>Az alkalmazás nem kér SMS-, hívásnapló- vagy <code>ACCESS_BACKGROUND_LOCATION</code> jogosultságot.</p>
+<h2>Megőrzés és törlés</h2>
+<p>A helyi alkalmazásadatok az Android <strong>Tárhely törlése / Adatok törlése</strong> funkciójával vagy az alkalmazás eltávolításával törölhetők.</p>
+<p>A helymegosztás kikapcsolása leállítja az új helyfrissítéseket.</p>
+<p>Mivel a jelenlegi verzióban nincs fejlesztői felhasználói fiók és backendprofil, nincs külön szerveroldali felhasználói fiók, amelynek törlését kérni kellene.</p>
+<h2>Adatbiztonság</h2>
+<p>Az alkalmazás:</p>
+<ul>
+<li>letiltja a titkosítatlan cleartext hálózati forgalmat;</li>
+<li>nem menti a nyers beszédhangot;</li>
+<li>nem olvassa a hívásnaplót;</li>
+<li>nem használ SMS-jogosultságot;</li>
+<li>a gondozói PIN-t nem tárolja olvasható formában.</li>
+</ul>
+<h2>Módosítások</h2>
+<p>Ha egy későbbi verzió bevezeti a valódi távoli készülékpárosítást, készülékek közötti üzenetküldést, helyadat továbbítását, felhőszolgáltatást, fiókokat, analitikát vagy más hálózati funkciót, az adatvédelmi szabályzatot és a Google Play Data Safety nyilatkozatot a funkció kiadása előtt frissíteni kell.</p>
+<h2>Kapcsolat</h2>
+<p>Adatvédelmi kérdésekkel a Google Play alkalmazásadatlapján közzétett fejlesztői kapcsolattartási címen lehet jelentkezni.</p>
+
+<footer>Family Phone · org.voicefamilyphone.app · Last updated 1 October 2026</footer>
+</article>
+</main>
+</body>
+</html>
